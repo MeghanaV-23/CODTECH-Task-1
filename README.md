@@ -9,40 +9,45 @@ Domain: 25 NOV 2025 TO 06 JAN 2025
 Mentor: 
 
 Overview of the Project
-Project: To-Do List Web Application
+Project: Basic Calculator
 ![image](https://github.com/user-attachments/assets/7b21dd3e-5681-44ee-9861-2d0e15cc83c0)
 
-Objective
-The objective of this program is to create a Library Management System that enables users to manage library items such as books, magazines, and DVDs. It supports adding items, checking them out, returning them, managing overdue fines, and searching for items.
-
-Key Activities
-1.	Add New Items
-    o	Users can add books, magazines, or DVDs to the library.
-    o	Each item has attributes like title, author, category, and status (checked out or not).
-2.	Checkout Items
-    o	Users can check out an item by entering the title and the received date and time.
-    o	The program calculates the due date (14 days loan period by default) and marks the item as checked out.
-3.	Return Items
-    o	Users can return checked-out items by entering the return date and time.
-    o	The program updates the status of the item to "not checked out."
-4.	Manage Overdue Fines
-    o	The program calculates overdue fines for items not returned by their due date.
-    o	Fine: $1 per day for overdue items.
-5.	Search for Items
-    o	Users can search for library items using keywords from the title, author, or category.
-    o	The program displays matching items with their details and current status.
-6.	Exit the System
-    o	Users can exit the system when done.
-
-Technologies Used
-1.	Python Programming Language
-    o	Provides object-oriented design for creating classes and methods.
-    o	Built-in modules like datetime help handle dates and times efficiently.
-2.	OOP Principles
-    o	Encapsulation: Library items and their functionalities are encapsulated in classes like LibraryItem, Book, Magazine, and DVD.
-    o	Inheritance: Book, Magazine, and DVD inherit from the base class LibraryItem.
-    o	Polymorphism: The checkout and return_item methods can handle different item types dynamically.
-3.	Datetime Module
-    o	Used to manage dates and times for tracking loan periods, due dates, and return dates.
-4.	Command-Line Interaction
-    o	Allows users to interact with the system through a menu-driven interface.
+Code Explanation in Paragraphs (Point-Wise)
+1. Objective:
+    •	The program serves as a basic calculator allowing users to perform fundamental arithmetic operations: 
+        o	Addition
+        o	Subtraction
+        o	Multiplication
+        o	Division
+    •	Designed with simplicity and error handling to enhance user experience.
+2. Key Activities:
+a. Define Arithmetic Functions:
+    •	Separate functions for each operation (add, subtract, multiply, divide). 
+        o	Addition: Takes two inputs and returns their sum.
+        o	Subtraction: Computes the difference between two numbers.
+        o	Multiplication: Returns the product of two numbers.
+        o	Division: Checks for division by zero to prevent runtime errors. If valid, it computes the quotient.
+b. Interactive User Input:
+    •	Prompts the user to: 
+        1.	Enter two numerical values.
+        2.	Choose an operation by selecting from a numbered menu.
+c. Execute Chosen Operation:
+    •	Based on the user's choice: 
+        o	Calls the corresponding function.
+        o	Displays the result to the user in a readable format.
+    •	Handles invalid inputs by displaying an appropriate error message.
+3. Technologies Used:
+    •	Python Programming: Utilizes core Python features such as: 
+        o	Functions: Encapsulates operations for modular and reusable code.
+        o	Conditional Statements (if-elif): Implements logic for operation selection.
+    •	Input/Output Operations: 
+        o	Takes user input via the input() function.
+        o	Outputs results using print().
+    •	Error Handling: Incorporates basic checks to manage edge cases like division by zero.
+4. Example Workflow:
+   1.	User starts the program and is welcomed with a prompt.
+   2.	Inputs two numerical values.
+   3.	Selects an operation from the menu (e.g., addition).
+   4.	Program performs the operation and displays the result.
+   5.	If division is selected with a divisor of zero, the program returns an error message.
+This calculator program demonstrates effective use of Python's functions and conditionals, emphasizing modular design and user-friendly interaction. It ensures smooth operation through error handling and clear input-output processes.
